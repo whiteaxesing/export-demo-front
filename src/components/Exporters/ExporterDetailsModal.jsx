@@ -43,7 +43,7 @@ const ExporterDetailsModal = ({ open, handleClose, exporterInfo }) => {
             <TextField fullWidth label="Sector" value={exporterInfo.sector || ''} InputProps={{ readOnly: true, style: { pointerEvents: 'none' } }} />
           </Grid>
           <Grid item xs={12}>
-            <TextField fullWidth label="Version" value={exporterInfo.version || ''} InputProps={{ readOnly: true, style: { pointerEvents: 'none' } }} />
+            <TextField fullWidth label="Version" value={exporterInfo.version || '0'} InputProps={{ readOnly: true, style: { pointerEvents: 'none' } }} />
           </Grid>
           <Grid item xs={12}>
             <Button variant="contained" onClick={handleClose}>Close</Button>
